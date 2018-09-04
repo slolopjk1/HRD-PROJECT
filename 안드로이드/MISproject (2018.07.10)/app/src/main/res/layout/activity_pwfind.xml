@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 찿기"
+            android:textSize="40dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp">
+
+        <EditText
+            android:id="@+id/PWF_id"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="사원번호" />
+
+        <TextView
+            android:id="@+id/PWF_idhint"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PWF_id"
+            android:layout_centerHorizontal="true"
+            android:text="8자리 숫자를 입력해주세요"
+            android:textColor="#ff0000"/>
+
+        <EditText
+            android:id="@+id/PWF_name"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PWF_idhint"
+            android:layout_centerHorizontal="true"
+            android:hint="이름" />
+
+        <TextView
+            android:id="@+id/PWF_namehint"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PWF_name"
+            android:layout_centerHorizontal="true"
+            android:text="영어, 한글 가능"
+            android:textColor="#ff0000"/>
+
+        <EditText
+            android:id="@+id/PWF_naver"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PWF_namehint"
+            android:layout_centerHorizontal="true"
+            android:hint="주민등록번호" />
+
+        <TextView
+            android:id="@+id/PWF_naverhint"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PWF_naver"
+            android:layout_centerHorizontal="true"
+            android:text="주민등록번호 뒷자리 7개를 입력하세요"
+            android:textColor="#ff0000"/>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PWF_naver"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/PWF_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="찿기" />
+
+            <Button
+                android:id="@+id/per_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="취소" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="searchlist">
+        <item>전체검색</item>
+        <item>부서 및 위치검색</item>
+        <item>품명 별 검색</item>
+        <item>취득단가별검색</item>
+        <item>처리일자별 검색</item>
+    </string-array>
+
+    <string-array name="depart">
+        <item >총무과</item>
+        <item >회계과</item>
+        <item >수학과</item>
+        <item >과학과</item>
+    </string-array>
+
+    <string-array name="location">
+        <item >101호</item>
+        <item >102호</item>
+        <item >103호</item>
+        <item >104호</item>
+    </string-array>
+
+    <string-array name="myarray">
+         <item>LIST1</item>
+         <item>LIST2</item>
+         <item>LIST3</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,7 @@
+@charset "EUC-KR";
+#chartcanvas {
+	position:relative;
+	top:200px;
+	padding: 0;
+	margin:auto;
+}

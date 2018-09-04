@@ -1,0 +1,28 @@
+@charset "EUC-KR";
+.silde{
+	width:1000px;
+	overflow:hidden;
+	margin:auto;
+	position: relative;
+}
+.silde ul {
+	width:5000px;
+	list-style: none;
+	font-size:0;
+}
+.silde ul li{
+	float:left;
+	display: inline-block;
+}
+.silde button.prev {
+	position: absolute;
+	left:0;
+	top:200px;
+	
+}
+.silde button.next {
+	position: absolute;
+	right:0;
+	top:200px;
+	
+}

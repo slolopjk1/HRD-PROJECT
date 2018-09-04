@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="권한 요청"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:id="@+id/enumber"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="사원번호" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/enumber"
+            android:layout_toRightOf="@+id/enumber">
+
+            <Button
+                android:id="@+id/idcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="idCheck"
+                android:text="중복확인"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/E_idhint"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enumber"
+            android:layout_centerHorizontal="true"
+            android:text="8자리 숫자를 입력해주세요"
+            android:textColor="#ff0000" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/E_idhint"
+            android:layout_centerHorizontal="true"
+            android:hint="비밀번호" />
+
+        <TextView
+            android:id="@+id/E_passwordhint"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:text="8~12자 영문 대 소문자, 숫자, 특수문자를 사용하세요"
+            android:textColor="#ff0000" />
+
+        <EditText
+            android:id="@+id/E_repassword"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/E_passwordhint"
+            android:layout_centerHorizontal="true"
+            android:hint="비밀번호 재입력" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/E_repassword"
+            android:layout_toRightOf="@id/E_repassword">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/E_repassword"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_Join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bt_Join"
+                android:text="권한 요청" />
+
+            <Button
+                android:id="@+id/per_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="per_End"
+                android:text="취소" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

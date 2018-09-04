@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.usertop.misproject">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.usertop.misproject"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".DownloadActivity"></activity>
+        <activity android:name=".HelpActivity"></activity>
+        <activity android:name=".Item_Delete_Lean_MoreActivity"></activity>
+        <activity android:name=".Item_DeleteActivity"></activity>
+        <activity android:name=".Item_InsertActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".Item_SearchActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".Lean_MoreActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".Location_DepartActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".ModifiedActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".Modified_Lean_MoreActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".PermissionActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".PW_FindActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".ReidrepwActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".Total_SearchActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".UploadActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".User_InfoActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".MoneyActivity"
+            android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>

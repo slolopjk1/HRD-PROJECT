@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:screenOrientation="landscape"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TableRow android:id="@+id/tableRow1">
+                <CheckBox
+                    android:id="@+id/check"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:textSize="18dp"
+                    android:focusable="false"/>
+
+                <ImageView
+                    android:id="@+id/사진"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/border" />
+
+
+                <TextView
+                    android:id="@+id/품명"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/제조업체명"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/모델명"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/규격"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/수량"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/취득단가"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>

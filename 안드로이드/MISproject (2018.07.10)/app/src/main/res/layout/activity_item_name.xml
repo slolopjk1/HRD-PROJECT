@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:screenOrientation="landscape"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="14"
+            >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="사진"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="모델명"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="제조업체명"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="품명"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="규격"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="수량"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="취득단가"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>
